@@ -17,7 +17,8 @@
     "test": "node --experimental-strip-types --test tests/*.test.mjs",
     "test:browser": "playwright test",
     "preview": "vite preview --host 127.0.0.1",
-    "verify:consumers": "node scripts/verify-consumers.mjs"
+    "verify:consumers": "node scripts/verify-consumers.mjs",
+    "verify:product": "node scripts/verify-product.mjs"
   },
   "dependencies": {
     "gsap": "3.15.0"

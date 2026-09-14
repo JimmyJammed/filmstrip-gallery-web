@@ -148,6 +148,8 @@ export function createFilmstripGallery(
   function render() {
     clearMotion();
     shell.setAttribute("aria-label", options.label);
+    gate.tabIndex = options.lightbox ? -1 : 0;
+    gate.setAttribute("aria-label", "Scroll gallery images");
     shell.style.setProperty("--fg-height", `${options.frameHeight}px`);
     shell.style.setProperty("--fg-fade", `${options.edgeFade}px`);
     originals = options.items.map((item, index) => {
@@ -244,6 +246,28 @@ export function createFilmstripGallery(
     () => {
       queueMicrotask(() => {
         if (disposed || track.contains(document.activeElement) || dialog.open)
+          return;
+        keyboard = false;
+        void build();
+      });
+    },
+    { signal },
+  );
+  gate.addEventListener(
+    "focus",
+    () => {
+      keyboard = true;
+      ++generation;
+      clearMotion();
+      sync();
+    },
+    { signal },
+  );
+  gate.addEventListener(
+    "blur",
+    () => {
+      queueMicrotask(() => {
+        if (disposed || gate.contains(document.activeElement) || dialog.open)
           return;
         keyboard = false;
         void build();

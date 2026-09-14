@@ -164,7 +164,8 @@ if (import.meta.env.DEV)
   });
 window.addEventListener(
   "pagehide",
-  () => {
+  (event) => {
+    if (event.persisted) return;
     for (const url of urls) URL.revokeObjectURL(url);
     gallery.destroy();
   },

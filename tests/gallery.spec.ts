@@ -243,15 +243,13 @@ test("pointer opens a moving frame and local files export as placeholders", asyn
     .click({ force: true });
   await expect(page.getByRole("dialog")).toBeVisible();
   await page.keyboard.press("Escape");
-  await page
-    .locator("#upload")
-    .setInputFiles({
-      name: "test.svg",
-      mimeType: "image/svg+xml",
-      buffer: Buffer.from(
-        '<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect width="100" height="100" fill="blue"/></svg>',
-      ),
-    });
+  await page.locator("#upload").setInputFiles({
+    name: "test.svg",
+    mimeType: "image/svg+xml",
+    buffer: Buffer.from(
+      '<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect width="100" height="100" fill="blue"/></svg>',
+    ),
+  });
   await expect(page.locator(".image-row")).toHaveCount(7);
   await expect(page.locator("#code")).toContainText("/images/");
   await expect(page.locator("#code")).not.toContainText("blob:");
@@ -282,4 +280,18 @@ test("loop coverage survives a full cycle and preference changes", async ({
   await expect(page.locator("[data-clone]")).toHaveCount(0);
   await page.emulateMedia({ reducedMotion: "no-preference" });
   await expect(page.locator(".fg")).toHaveAttribute("data-playing", "true");
+});
+
+test("lightbox-free galleries allow keyboard scrolling", async ({ page }) => {
+  await page.evaluate(() =>
+    (window as any).filmstrip.update({ lightbox: false }),
+  );
+  const gate = page.getByLabel("Scroll gallery images", { exact: true });
+  await gate.focus();
+  await expect(page.locator("[data-clone]")).toHaveCount(0);
+  await expect(gate).toHaveCSS("overflow-x", "auto");
+  await page.keyboard.press("ArrowRight");
+  await expect
+    .poll(() => gate.evaluate((el) => el.scrollLeft))
+    .toBeGreaterThan(0);
 });
