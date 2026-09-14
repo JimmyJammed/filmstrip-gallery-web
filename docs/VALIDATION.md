@@ -32,4 +32,4 @@ No physical-device or screen-reader certification is claimed. Mobile coverage is
 
 ## Publication
 
-The public route and release will be verified after merge. Deployment results are recorded separately in DEPLOYMENT-RESULTS.md.
+The public route passed desktop/mobile checks and byte-for-byte verification of all 11 runtime files. See [deployment results](DEPLOYMENT-RESULTS.md).

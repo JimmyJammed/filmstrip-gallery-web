@@ -18,7 +18,8 @@
     "test:browser": "playwright test",
     "preview": "vite preview --host 127.0.0.1",
     "verify:consumers": "node scripts/verify-consumers.mjs",
-    "verify:product": "node scripts/verify-product.mjs"
+    "verify:product": "node scripts/verify-product.mjs",
+    "verify:hosted": "node scripts/check-hosted.mjs"
   },
   "dependencies": {
     "gsap": "3.15.0"
