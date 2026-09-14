@@ -8,6 +8,12 @@
 [![MIT](https://img.shields.io/badge/license-MIT-2e7d32)](LICENSE)
 [![Live demo](https://img.shields.io/badge/demo-view%20live-2563eb)](https://hickman.biz/portfolio/filmstrip-gallery)
 
+[![Unit tests](https://img.shields.io/badge/unit%20tests-6%20passed%20%28local%29-2e7d32)](https://github.com/JimmyJammed/filmstrip-gallery-web/blob/22bb73755ac82132987e2edeb6d4099ee2811f06/docs/VALIDATION.md)
+[![Browser tests](https://img.shields.io/badge/browser%20tests-56%20passed%20%28local%29-2e7d32)](https://github.com/JimmyJammed/filmstrip-gallery-web/blob/22bb73755ac82132987e2edeb6d4099ee2811f06/docs/VALIDATION.md)
+[![Build](https://img.shields.io/badge/build-verified%20locally-2e7d32)](https://github.com/JimmyJammed/filmstrip-gallery-web/blob/22bb73755ac82132987e2edeb6d4099ee2811f06/docs/VALIDATION.md)
+
+Validation badges record local checks on **2026-09-14**, not live CI status. Click for tested scope and evidence.
+
 A little cinema for the web. A framework-neutral TypeScript image gallery with textured film frames, seamless GSAP motion, a keyboard-accessible lightbox, and an optional React adapter.
 
 [Live playground](https://hickman.biz/portfolio/filmstrip-gallery) · [API](docs/API.md) · [Validation](docs/VALIDATION.md)
