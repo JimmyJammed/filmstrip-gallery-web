@@ -1,0 +1,301 @@
+{
+  "date": "2026-09-14",
+  "sourceRevision": "f451837693e0e622dbb9172cbc6d5ef1b1bbf6fa",
+  "node": "26.7.0",
+  "playwright": "1.63.0",
+  "unitTests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "browserTests": [
+    {
+      "name": "loops, pauses and resumes without duplicate accessible controls",
+      "project": "chromium",
+      "status": "passed"
+    },
+    {
+      "name": "keyboard opens, navigates, escapes and restores visible focus",
+      "project": "chromium",
+      "status": "passed"
+    },
+    {
+      "name": "reduced motion stays scrollable and lightbox remains available",
+      "project": "chromium",
+      "status": "passed"
+    },
+    {
+      "name": "Save-Data avoids importing GSAP and preserves images",
+      "project": "chromium",
+      "status": "passed"
+    },
+    {
+      "name": "empty, single and short tracks survive resizing",
+      "project": "chromium",
+      "status": "passed"
+    },
+    {
+      "name": "instances isolate state and repeated init restores host content",
+      "project": "chromium",
+      "status": "passed"
+    },
+    {
+      "name": "offscreen and document visibility pause playback",
+      "project": "chromium",
+      "status": "passed"
+    },
+    {
+      "name": "playground edits export safely and resets",
+      "project": "chromium",
+      "status": "passed"
+    },
+    {
+      "name": "broken images retain accessible labels and controls",
+      "project": "chromium",
+      "status": "passed"
+    },
+    {
+      "name": "React Strict Mode mounts and unmounts without duplicate galleries",
+      "project": "chromium",
+      "status": "passed"
+    },
+    {
+      "name": "mobile layout has no horizontal overflow",
+      "project": "chromium",
+      "status": "passed"
+    },
+    {
+      "name": "pointer opens a moving frame and local files export as placeholders",
+      "project": "chromium",
+      "status": "passed"
+    },
+    {
+      "name": "loop coverage survives a full cycle and preference changes",
+      "project": "chromium",
+      "status": "passed"
+    },
+    {
+      "name": "lightbox-free galleries allow keyboard scrolling",
+      "project": "chromium",
+      "status": "passed"
+    },
+    {
+      "name": "loops, pauses and resumes without duplicate accessible controls",
+      "project": "firefox",
+      "status": "passed"
+    },
+    {
+      "name": "keyboard opens, navigates, escapes and restores visible focus",
+      "project": "firefox",
+      "status": "passed"
+    },
+    {
+      "name": "reduced motion stays scrollable and lightbox remains available",
+      "project": "firefox",
+      "status": "passed"
+    },
+    {
+      "name": "Save-Data avoids importing GSAP and preserves images",
+      "project": "firefox",
+      "status": "passed"
+    },
+    {
+      "name": "empty, single and short tracks survive resizing",
+      "project": "firefox",
+      "status": "passed"
+    },
+    {
+      "name": "instances isolate state and repeated init restores host content",
+      "project": "firefox",
+      "status": "passed"
+    },
+    {
+      "name": "offscreen and document visibility pause playback",
+      "project": "firefox",
+      "status": "passed"
+    },
+    {
+      "name": "playground edits export safely and resets",
+      "project": "firefox",
+      "status": "passed"
+    },
+    {
+      "name": "broken images retain accessible labels and controls",
+      "project": "firefox",
+      "status": "passed"
+    },
+    {
+      "name": "React Strict Mode mounts and unmounts without duplicate galleries",
+      "project": "firefox",
+      "status": "passed"
+    },
+    {
+      "name": "mobile layout has no horizontal overflow",
+      "project": "firefox",
+      "status": "passed"
+    },
+    {
+      "name": "pointer opens a moving frame and local files export as placeholders",
+      "project": "firefox",
+      "status": "passed"
+    },
+    {
+      "name": "loop coverage survives a full cycle and preference changes",
+      "project": "firefox",
+      "status": "passed"
+    },
+    {
+      "name": "lightbox-free galleries allow keyboard scrolling",
+      "project": "firefox",
+      "status": "passed"
+    },
+    {
+      "name": "loops, pauses and resumes without duplicate accessible controls",
+      "project": "webkit",
+      "status": "passed"
+    },
+    {
+      "name": "keyboard opens, navigates, escapes and restores visible focus",
+      "project": "webkit",
+      "status": "passed"
+    },
+    {
+      "name": "reduced motion stays scrollable and lightbox remains available",
+      "project": "webkit",
+      "status": "passed"
+    },
+    {
+      "name": "Save-Data avoids importing GSAP and preserves images",
+      "project": "webkit",
+      "status": "passed"
+    },
+    {
+      "name": "empty, single and short tracks survive resizing",
+      "project": "webkit",
+      "status": "passed"
+    },
+    {
+      "name": "instances isolate state and repeated init restores host content",
+      "project": "webkit",
+      "status": "passed"
+    },
+    {
+      "name": "offscreen and document visibility pause playback",
+      "project": "webkit",
+      "status": "passed"
+    },
+    {
+      "name": "playground edits export safely and resets",
+      "project": "webkit",
+      "status": "passed"
+    },
+    {
+      "name": "broken images retain accessible labels and controls",
+      "project": "webkit",
+      "status": "passed"
+    },
+    {
+      "name": "React Strict Mode mounts and unmounts without duplicate galleries",
+      "project": "webkit",
+      "status": "passed"
+    },
+    {
+      "name": "mobile layout has no horizontal overflow",
+      "project": "webkit",
+      "status": "passed"
+    },
+    {
+      "name": "pointer opens a moving frame and local files export as placeholders",
+      "project": "webkit",
+      "status": "passed"
+    },
+    {
+      "name": "loop coverage survives a full cycle and preference changes",
+      "project": "webkit",
+      "status": "passed"
+    },
+    {
+      "name": "lightbox-free galleries allow keyboard scrolling",
+      "project": "webkit",
+      "status": "passed"
+    },
+    {
+      "name": "loops, pauses and resumes without duplicate accessible controls",
+      "project": "mobile-webkit",
+      "status": "passed"
+    },
+    {
+      "name": "keyboard opens, navigates, escapes and restores visible focus",
+      "project": "mobile-webkit",
+      "status": "passed"
+    },
+    {
+      "name": "reduced motion stays scrollable and lightbox remains available",
+      "project": "mobile-webkit",
+      "status": "passed"
+    },
+    {
+      "name": "Save-Data avoids importing GSAP and preserves images",
+      "project": "mobile-webkit",
+      "status": "passed"
+    },
+    {
+      "name": "empty, single and short tracks survive resizing",
+      "project": "mobile-webkit",
+      "status": "passed"
+    },
+    {
+      "name": "instances isolate state and repeated init restores host content",
+      "project": "mobile-webkit",
+      "status": "passed"
+    },
+    {
+      "name": "offscreen and document visibility pause playback",
+      "project": "mobile-webkit",
+      "status": "passed"
+    },
+    {
+      "name": "playground edits export safely and resets",
+      "project": "mobile-webkit",
+      "status": "passed"
+    },
+    {
+      "name": "broken images retain accessible labels and controls",
+      "project": "mobile-webkit",
+      "status": "passed"
+    },
+    {
+      "name": "React Strict Mode mounts and unmounts without duplicate galleries",
+      "project": "mobile-webkit",
+      "status": "passed"
+    },
+    {
+      "name": "mobile layout has no horizontal overflow",
+      "project": "mobile-webkit",
+      "status": "passed"
+    },
+    {
+      "name": "pointer opens a moving frame and local files export as placeholders",
+      "project": "mobile-webkit",
+      "status": "passed"
+    },
+    {
+      "name": "loop coverage survives a full cycle and preference changes",
+      "project": "mobile-webkit",
+      "status": "passed"
+    },
+    {
+      "name": "lightbox-free galleries allow keyboard scrolling",
+      "project": "mobile-webkit",
+      "status": "passed"
+    }
+  ],
+  "sourceHashes": {
+    "src/assets/film-frame.svg": "500fea7497265c2a7cbe935996d2967ac2f80d93038c190cf3eefed689477b29",
+    "src/index.ts": "b632752f0f199a48a86afff16c63492677e708cbf779a68b8d9293dd83db6227",
+    "src/react.tsx": "9ef75cb805150786908dfe785d8557247df93add7fdae98175ed0155cec7990f",
+    "src/styles.css": "a14c223e7539a276db89a7327be4e8ec4050a15db10197181e58e07ded6a1204",
+    "src/types.ts": "0aea92eae94ecd1f2117e844b3367673220f8da86c099feadfdba495e37021c3",
+    "demo/main.ts": "e252d4004e22467ddd9dcdcd3c9d73cb7fb3bd24295e75d837787288209e7384",
+    "demo/style.css": "6511e54ce545a91b2c58574283fe26471082b49261f31c5eef33c804a9164294"
+  }
+}
