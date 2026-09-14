@@ -275,6 +275,25 @@ export function createFilmstripGallery(
     },
     { signal },
   );
+  gate.addEventListener(
+    "keydown",
+    (event) => {
+      if (
+        event.target !== gate ||
+        !["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)
+      )
+        return;
+      event.preventDefault();
+      const width = originals[0]?.getBoundingClientRect().width ?? 100;
+      gate.scrollLeft =
+        event.key === "Home"
+          ? 0
+          : event.key === "End"
+            ? gate.scrollWidth
+            : gate.scrollLeft + (event.key === "ArrowRight" ? width : -width);
+    },
+    { signal },
+  );
   const step = (amount: number) => {
     selected =
       (selected + amount + options.items.length) % options.items.length;
